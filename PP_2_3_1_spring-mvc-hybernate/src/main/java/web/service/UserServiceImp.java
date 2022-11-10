@@ -24,7 +24,6 @@ public class UserServiceImp implements UserService{
         userDao.add(user);
     }
 
-    @Transactional
     @Override
     public List<User> listUsers() {
         return userDao.listUsers();
@@ -42,7 +41,6 @@ public class UserServiceImp implements UserService{
         userDao.updateUser(user, id);
     }
 
-    @Transactional
     @Override
     public User showUser(int id) {
         return userDao.showUser(id);
